@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    background-color: rgb(10, 57, 78);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.tablaJuego {
+    height: 100vh;
+    width: 100vh;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 60vh;
+    max-height: 60vh;
+}
+.color {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.celeste {
+    background: #22a6b3;
+}
+.celeste.light {
+    background: #7ed6df;
+}
+.violeta {
+    background: #be2edd;
+}
+.violeta.light {
+    background: #e056fd;
+}
+.naranja {
+    background: #f0932b;
+}
+.naranja.light {
+    background: #ffbe76;
+}
+.verde {
+    background: #6ab04c;
+}
+.verde.light {
+    background: #badc58;
+}
+
+.btn-empezar {
+    cursor: pointer;
+    position: absolute;
+    width: 420px;
+    height: 100px;
+    background: #ecf0f1;
+    color: #2c3e50;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 4px solid #c4c6c7;
+    top: calc(50% - 50px);
+    left: calc(50% - 210px);
+    outline: none;
+    font-size: 3em;
+}
+.btn-empezar:hover {
+    color: #ecf0f1;
+    background: #2c3e50;
+    border-bottom: 4px solid #1f3346;
+    transition: .8s;
+}
+.btn-empezar:active {
+    transform: scale(.95);
+}
+
+.hide {
+    visibility: hidden;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+    animation-name: salida;
+}
+
+@keyframes salida {
+    from {
+        display: block;
+        opacity: 1;
+    }
+    to {
+        display: none;
+        opacity: 0;
+    }
+}
